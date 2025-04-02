@@ -1,10 +1,7 @@
 import React from "react";
 
-function About() {
+export const About = () => {
     return (
         <h1>Hello World!</h1>
-    )
-}
-
-
-export default About;
+    );
+};
