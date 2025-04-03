@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { List } from "../components/List.tsx";
+import { Card } from "../components/Card.tsx";
 import styles from "../styles/Home.module.scss";
 
 export const Home = () => {
@@ -9,17 +9,23 @@ export const Home = () => {
             <header className={styles.header}>
                 <h1>My Portfolio</h1>
             </header>
-            <main>
+            <main className={styles.main}>
                 <nav className={styles.nav}>
                     <Link to='/about'>
                         <button className={styles.button} >About me</button>
                     </Link>
                     <Link to='/blog'>
-                    <button className={styles.button}>Blog/Articles</button>
+                        <button className={styles.button}>Blog/Articles</button>
                     </Link>
                 </nav>
                 <section className={styles.projects}>
-                    <List/>
+                    <input type="text" id="searchbar" name="searchbar" className={styles.textInput} placeholder="search for @tag or Project. Example: @React"/>
+                    <div className={styles.cardcontainer}>
+                        <Card />
+                        <Card />
+                        <Card />
+                        <Card />
+                    </div>
                 </section>    
             </main>
             <footer className={styles.footer}>
