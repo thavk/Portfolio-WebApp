@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Card } from "../components/Card.tsx";
+import { Card } from "../features/Card.tsx";
+import { SearchBar } from "../features/SearchBar.tsx";
 import styles from "../styles/Home.module.scss";
 
 export const Home = () => {
+    const [term, setTerm] = useState('');
+
+    const unholyLotusTags = ['React']
+
+    const eventHandler = (e: { target: { value: string; }; }) => {
+        setTerm(e.target.value);
+    };
+
+    const cardSort = (tags: string[]) => {
+        
+    }
+
+    useEffect(() => {
+        
+    }, [term]);
+
+
+
     return (
         <div className={styles.home}>
             <header className={styles.header}>
@@ -19,12 +38,18 @@ export const Home = () => {
                     </Link>
                 </nav>
                 <section className={styles.projects}>
-                    <input type="text" id="searchbar" name="searchbar" className={styles.textInput} placeholder="search for @tag or Project. Example: @React"/>
+                    <SearchBar value={term} onChange={eventHandler}/>
                     <div className={styles.cardcontainer}>
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
+                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
                     </div>
                 </section>    
             </main>

@@ -38,24 +38,22 @@ body, html {
 }
 
 .nav {
-    height: auto;
-    margin: auto;
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: #1f1f1f;
     border-radius: 20px;
-    padding: 45px;
+    gap: 200px;
+    padding: 40px;
 }
 
 .button {
     background: #444444; 
     color: white;
-    border-radius: 8px;
-    padding: 10px 20px;
+    border-radius: 0px;
+    padding: 20px 40px;
     font-size: 1.2rem;
     transition: all 0.3s;
-    margin: 20px;
 }
 
 button:hover {
@@ -103,7 +101,29 @@ button:hover {
     width: 100%;
     gap: 60px;
     padding: 0 20px 0 20px;
+    max-height: 800px;
+    overflow-y: auto;
 }
+
+.cardcontainer::-webkit-scrollbar {
+    width: 20px;
+}
+
+.cardcontainer::-webkit-scrollbar-thumb {
+    background-color: #00000081;
+    border-radius: 3px;
+}
+
+.cardcontainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.cardcontainer::-webkit-scrollbar-track {
+    background: #fffdfd6c;
+    border-radius: 3px;
+}
+
+
 
 .buttonCard {
     border-radius: 15px;
@@ -126,8 +146,7 @@ button:hover {
 }
 
 .textInput {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     padding: 12px 16px;
     border: 2px solid #000000;
     border-radius: 8px;
@@ -147,4 +166,8 @@ button:hover {
 
 .buttonImage {
     border-radius: 12px 12px 0px 0px;
+}
+
+.hiddenComponent {
+    display: none;
 }

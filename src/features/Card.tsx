@@ -2,11 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Home.module.scss"
 
-export const Card = () => {
+type CardProps = {
+    name: string;
+    tags: string[];
+    visibility: boolean;
+}
+
+export const Card = ({ name, tags, visibility}: CardProps) => {
 
 
 
-    return (
+
+    if (visibility) {
+        return (
         <div>
             <Link to="/projects">
                 <button className={styles.buttonCard}>
@@ -17,6 +25,10 @@ export const Card = () => {
                     </div>
                 </button>
             </Link>
-        </div>
-    )
+        </div>)
+    } else {
+        return (
+        <div className={styles.hiddenComponent}>
+        </div>)
+    }
 };
