@@ -5,15 +5,12 @@ import styles from "../styles/Home.module.scss"
 type CardProps = {
     name: string;
     tags: string[];
-    visibility: boolean;
 }
 
-export const Card = ({ name, tags, visibility}: CardProps) => {
+export const Card = ({ name, tags }: CardProps) => {
 
 
 
-
-    if (visibility) {
         return (
         <div>
             <Link to="/projects">
@@ -26,9 +23,4 @@ export const Card = ({ name, tags, visibility}: CardProps) => {
                 </button>
             </Link>
         </div>)
-    } else {
-        return (
-        <div className={styles.hiddenComponent}>
-        </div>)
-    }
 };

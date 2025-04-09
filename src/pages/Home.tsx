@@ -6,19 +6,47 @@ import styles from "../styles/Home.module.scss";
 
 export const Home = () => {
     const [term, setTerm] = useState('');
+    const [cards, setCards] = useState<Data[]>([]);
 
-    const unholyLotusTags = ['React']
+    const cardObjectMock = [{
+        name: 'Unholy Lotus Project',
+        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
+    },
+    {
+        name: 'Unholy Lotus Project',
+        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
+    },
+    {
+        name: 'Unholy Lotus Project',
+        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
+    },
+    {
+        name: 'Unholy Lotus Project',
+        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
+    },
+    {
+        name: 'Unholy Lotus Project',
+        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
+    }]
 
     const eventHandler = (e: { target: { value: string; }; }) => {
         setTerm(e.target.value);
     };
 
-    const cardSort = (tags: string[]) => {
-        
+    type Data = {
+        name: string,
+        tags: string[]
+    }
+
+    const cardSort = (arr: Data[]) => {
+        let matchingCards = arr.filter((item) => {
+            return item.tags.some(element => element.toLowerCase().includes(term.toLowerCase()));
+        })
+        setCards(matchingCards);
     }
 
     useEffect(() => {
-        
+        cardSort(cardObjectMock);
     }, [term]);
 
 
@@ -40,16 +68,11 @@ export const Home = () => {
                 <section className={styles.projects}>
                     <SearchBar value={term} onChange={eventHandler}/>
                     <div className={styles.cardcontainer}>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={true}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
-                        <Card name='unholyLotus' tags={unholyLotusTags} visibility={false}/>
+                        {cards
+                            .map((item) => {
+                                return <Card name={item.name} tags={item.tags}/>
+                            })
+                        }
                     </div>
                 </section>    
             </main>
