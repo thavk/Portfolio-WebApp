@@ -13,16 +13,14 @@ export const Card = ({ name, tags }: CardProps) => {
 
         return (
         <div>
-            
+            <Link to={`projects/${slug}`}>
                 <button className={styles.buttonCard}>
-                    <Link to={`projects/${slug}`}>
-                        <div className={styles.card}>
-                            <img src="../../src/assets/header-background.jpg" width="350px" height="150px" className={styles.buttonImage}></img>
-                            <h3>Unholy Lotus</h3>
-                            <h4>Guild Management App</h4>
-                        </div>
-                    </Link>
+                    <div className={styles.card}>
+                        <img src="../../src/assets/header-background.jpg" className={styles.buttonImage}></img>
+                        <h3>Unholy Lotus</h3>
+                        <h4>Guild Management App</h4>
+                    </div>
                 </button>
-            
+            </Link>
         </div>)
 };
