@@ -62,7 +62,7 @@ button:hover {
 }
 
 .projects {
-    color: #1b1b1b;
+    color: #131212;
     text-align: center;
     border-radius: 10px;
     display: flex;
@@ -73,8 +73,8 @@ button:hover {
 }
 
 .main {
-    background-color: #1b1b1b;
-    padding-bottom: 100px;
+    background-color:rgb(22, 22, 22);
+    padding-bottom: 10px;
     width: 50%;
     min-width: 600px;
     max-width: 1100px;
@@ -100,9 +100,10 @@ button:hover {
     justify-content: center; 
     width: 100%;
     gap: 60px;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 0 20px;
     max-height: 800px;
     overflow-y: auto;
+    background-color: rgb(22, 22, 22);
 }
 
 .cardcontainer::-webkit-scrollbar {
@@ -128,11 +129,11 @@ button:hover {
 .buttonCard {
     border-radius: 15px;
     background-color: #1b1b1b;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border: 15px;
-    border-color: #000000;
+    border: 1px;
+    border-color: #00000000;
+    background-color: #00000000;
 }
 
 .buttonCard:hover {
@@ -166,4 +167,10 @@ button:hover {
 
 .buttonImage {
     border-radius: 12px 12px 0px 0px;
+}
+
+.links {
+     text-decoration: none;
+     color: white;
+     font-size: 20px;
 }
