@@ -9,18 +9,20 @@ type CardProps = {
 
 export const Card = ({ name, tags }: CardProps) => {
 
-
+        let slug = encodeURIComponent(name);
 
         return (
         <div>
-            <Link to="/projects">
+            
                 <button className={styles.buttonCard}>
-                    <div className={styles.card}>
-                        <img src="../../src/assets/header-background.jpg" width="350px" height="150px" className={styles.buttonImage}></img>
-                        <h3>Unholy Lotus</h3>
-                        <h4>Guild Management App</h4>
-                    </div>
+                    <Link to={`projects/${slug}`}>
+                        <div className={styles.card}>
+                            <img src="../../src/assets/header-background.jpg" width="350px" height="150px" className={styles.buttonImage}></img>
+                            <h3>Unholy Lotus</h3>
+                            <h4>Guild Management App</h4>
+                        </div>
+                    </Link>
                 </button>
-            </Link>
+            
         </div>)
 };

@@ -1,104 +1,24 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Card } from "../features/Card.tsx";
-import { SearchBar } from "../features/SearchBar.tsx";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/Home.module.scss";
 
 export const Home = () => {
-    const [term, setTerm] = useState('');
-    const [cards, setCards] = useState<Data[]>([]);
-
-    const cardObjectMock = [{
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    }]
-
-    const eventHandler = (e: { target: { value: string; }; }) => {
-        setTerm(e.target.value);
-    };
-
-    type Data = {
-        name: string,
-        tags: string[]
-    }
-
-    const cardSort = (arr: Data[]) => {
-        let matchingCards = arr.filter((item) => {
-            return item.tags.some(element => element.toLowerCase().includes(term.toLowerCase()));
-        })
-        setCards(matchingCards);
-    }
-
-    useEffect(() => {
-        cardSort(cardObjectMock);
-    }, [term]);
-
-
-
+    
     return (
         <div className={styles.home}>
             <header className={styles.header}>
-                <h1>My Portfolio</h1>
+                <h1 className={styles.siteIcon}>Marco's Corner</h1>
             </header>
             <main className={styles.main}>
                 <nav className={styles.nav}>
                     <Link to='/about'>
-                        <button className={styles.button} >About me</button>
+                        <button className={styles.button}>About me</button>
                     </Link>
                     <Link to='/blog'>
                         <button className={styles.button}>Blog/Articles</button>
                     </Link>
                 </nav>
-                <section className={styles.projects}>
-                    <SearchBar value={term} onChange={eventHandler}/>
-                    <div className={styles.cardcontainer}>
-                        {cards
-                            .map((item) => {
-                                return <Card name={item.name} tags={item.tags}/>
-                            })
-                        }
-                    </div>
-                </section>    
+                <Outlet/>   
             </main>
             <footer className={styles.footer}>
                 <h3>Contact:</h3>
