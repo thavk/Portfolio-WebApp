@@ -14,10 +14,12 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@mui/styled-engine-sc": "^7.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.4.1",
     "sass": "^1.86.1",
+    "styled-components": "^6.1.17",
     "vite": "^6.2.4"
   },
   "devDependencies": {
