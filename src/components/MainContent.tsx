@@ -2,63 +2,24 @@ import React, { useEffect, useState } from "react";
 import { SearchBar } from "../features/SearchBar";
 import { Card } from "../features/Card";
 import styles from "../styles/Home.module.scss";
+import { projects } from "../data/projects";
+
 
 export const MainContent = () => {
     const [term, setTerm] = useState('');
     const [cards, setCards] = useState<Data[]>([]);
 
-    const cardObjectMock = [{
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript', 'React', 'React'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    },
-    {
-        name: 'Unholy Lotus Project',
-        tags: ['Jest', 'HTML5', 'HTML', 'javascript'],
-    }]
 
     const eventHandler = (e: { target: { value: string; }; }) => {
         setTerm(e.target.value);
     };
 
     type Data = {
-        name: string,
-        tags: string[]
+        title: string,
+        subTitle: string,
+        tags: string[],
+        slug: string,
+        cardImg: string,
     }
 
     const cardSort = (arr: Data[]) => {
@@ -69,7 +30,7 @@ export const MainContent = () => {
     }
 
     useEffect(() => {
-        cardSort(cardObjectMock);
+        cardSort(projects);
     }, [term]);
 
 
@@ -79,8 +40,8 @@ export const MainContent = () => {
             <SearchBar value={term} onChange={eventHandler}/>
             <div className={styles.cardcontainer}>
                 {cards
-                    .map((item: Data) => {
-                        return <Card name={item.name} tags={item.tags}/>
+                    .map((item: Data, index) => {
+                        return <Card key={index} cardImg={item.cardImg} title={item.title} subTitle={item.subTitle} slug={item.slug} tags={item.tags}/>
                     })
                 }
             </div>

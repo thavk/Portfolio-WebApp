@@ -3,22 +3,23 @@ import { Link } from "react-router-dom";
 import styles from "../styles/Home.module.scss"
 
 type CardProps = {
-    name: string;
+    title: string;
+    subTitle: string;
     tags: string[];
+    slug: string;
+    cardImg: string;
 }
 
-export const Card = ({ name, tags }: CardProps) => {
-
-        let slug = encodeURIComponent(name);
+export const Card = ({ title, subTitle, tags, slug, cardImg }: CardProps) => {
 
         return (
         <div>
             <Link to={`projects/${slug}`}>
                 <button className={styles.buttonCard}>
                     <div className={styles.card}>
-                        <img src="../../src/assets/header-background.jpg" className={styles.buttonImage}></img>
-                        <h3>Unholy Lotus</h3>
-                        <h4>Guild Management App</h4>
+                        <img src={cardImg} className={styles.buttonImage}></img>
+                        <h3>{title}</h3>
+                        <h4>{subTitle}</h4>
                         <section className={styles.tagsContainer}>
                             {tags
                                 .map((item, index) => {
@@ -35,3 +36,5 @@ export const Card = ({ name, tags }: CardProps) => {
             </Link>
         </div>)
 };
+
+
