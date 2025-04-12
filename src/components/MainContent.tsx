@@ -9,7 +9,7 @@ export const MainContent = () => {
 
     const cardObjectMock = [{
         name: 'Unholy Lotus Project',
-        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript'],
+        tags: ['React', 'Jest', 'HTML5', 'HTML', 'javascript', 'React', 'React'],
     },
     {
         name: 'Unholy Lotus Project',

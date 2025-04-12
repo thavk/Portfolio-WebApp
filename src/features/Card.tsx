@@ -19,6 +19,17 @@ export const Card = ({ name, tags }: CardProps) => {
                         <img src="../../src/assets/header-background.jpg" className={styles.buttonImage}></img>
                         <h3>Unholy Lotus</h3>
                         <h4>Guild Management App</h4>
+                        <section className={styles.tagsContainer}>
+                            {tags
+                                .map((item, index) => {
+                                return (
+                                <p key={index} className={styles.tags}>
+                                    {item}
+                                </p>
+                                ) 
+                                })
+                            }
+                        </section>
                     </div>
                 </button>
             </Link>

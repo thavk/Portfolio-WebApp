@@ -102,15 +102,64 @@ button:hover {
     text-align: center;
     color: white;
     width: 350px;
-    height: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
     @media (width <= 1700px) {
-        width: 262px;
-        height: 225px;
+        width: 272px;
+        height: 260px;
     }
     @media (width <= 1290px) {
         width: 175px;
-        height: 150px;
+        height: 160px;
+        overflow: hidden;
     }
+}
+
+.tags {
+    margin: 0px;
+    background-color: #464646;
+    padding: 7px;
+    border-radius: 20px;
+
+    @media (width <= 1700px) {
+        height: 10px;
+        width: auto;
+        font-size: 10px;
+    }
+}
+
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 37px;
+    margin: auto 20px 20px 20px;
+    overflow-y: auto;
+    @media (width <= 1700px) {
+        margin-bottom: 10px;
+        max-height: 32px;
+    }
+}
+
+.tagsContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tagsContainer::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    border-radius: 10px;
+}
+
+.tagsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.tagsContainer::-webkit-scrollbar-track {
+    background: #2b2a2a;
+    border-radius: 15px;
 }
 
 .cardcontainer {
@@ -123,6 +172,9 @@ button:hover {
     max-height: 800px;
     overflow-y: auto;
     background-color: rgb(22, 22, 22);
+    @media (width <= 1700px) {
+        padding: 0px;
+    }
 }
 
 .cardcontainer::-webkit-scrollbar {
@@ -194,7 +246,7 @@ button:hover {
     width:350px;
     height:150px;
     @media (width <= 1700px) {
-        width: 262px;
+        width: 272px;
         height: 112px;
     }
     @media (width <= 1290px) {
@@ -208,5 +260,4 @@ button:hover {
      color: white;
      font-size: 20px;
 }
-
 
