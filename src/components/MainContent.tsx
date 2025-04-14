@@ -41,7 +41,13 @@ export const MainContent = () => {
             <div className={styles.cardcontainer}>
                 {cards
                     .map((item: Data, index) => {
-                        return <Card key={index} cardImg={item.cardImg} title={item.title} subTitle={item.subTitle} slug={item.slug} tags={item.tags}/>
+                        return <Card 
+                                key={index} 
+                                cardImg={item.cardImg} 
+                                title={item.title} 
+                                subTitle={item.subTitle} 
+                                slug={item.slug} 
+                                tags={item.tags}/>
                     })
                 }
             </div>

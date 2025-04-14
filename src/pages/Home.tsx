@@ -25,11 +25,11 @@ export const Home = () => {
                 <p>+351924713484</p>    
                 <p>marco_estela_ferreira@hotmail.com</p>
                 <div>
-                    <img src="./src/assets/github-mark-white.png" alt="GitHub Icon" height='17 px'></img>
+                    <img src="/src/assets/github-mark-white.png" alt="GitHub Icon" height='17 px'></img>
                     <a href="https://github.com/silomeno" className={styles.links}>GitHub</a>    
                 </div>    
                 <div>
-                    <img src="./src/assets/InBug-white.png" alt="LinkedIn Icon" height='16 px'></img>
+                    <img src="/src/assets/InBug-white.png" alt="LinkedIn Icon" height='16 px'></img>
                     <a href="https://www.linkedin.com/in/marco-ferreira-9a5246296/" className={styles.links}>LinkedIn</a>  
                 </div>  
             </footer> 
