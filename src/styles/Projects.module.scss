@@ -1,2 +1,86 @@
+.main {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    .titles {
+        h1 {
+            font-size: 50px;
+            margin: 35px 0 12px 0;
+        }
+    
+        h2 {
+            margin: 4px 0;
+            font-size: 28px;
+            align-self: center;
+            color:rgb(117, 117, 117);
+        }
+    }
+    
+    .mainBody {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+        margin-top: 55px;
+
+        .tagsContainer {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-height: 37px;
+            margin: 0 20px 20px 20px;
+
+            @media (width <= 1700px) {
+                margin-bottom: 10px;
+                max-height: 32px;
+            }
+            
+            .tags {
+                margin: 0px;
+                background-color: #464646;
+                padding: 7px;
+                border-radius: 20px;
+            
+                @media (width <= 1700px) {
+                    height: 10px;
+                    width: auto;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .imageContainer {
+            display: inline-flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            flex-direction: row;
+            grid-column: 2 / span 2;
+            grid-row: 1 / 1;
+            width: 100%;
+            height: auto;
+            margin-right: 20px;
+            .image {
+                margin: 0 25px 10px 25px;
+                border-radius: 8px;
+            }
+        }
+
+        .descriptionContainer {
+            grid-column: 1 / 2 ;
+            grid-row: 2 / 2;
+            background-color: #4646464f;
+            height: 250px;
+            width: 450px;
+            border-radius: 8px;
+            .description {
+                
+            }
+        }
+    }
+}
 
