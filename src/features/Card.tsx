@@ -21,14 +21,15 @@ export const Card = ({ title, subTitle, tags, slug, cardImg }: CardProps) => {
                         <h3>{title}</h3>
                         <h4>{subTitle}</h4>
                         <section className={styles.tagsContainer}>
-                            {tags
-                                .map((item, index) => {
-                                return (
-                                <p key={index} className={styles.tags}>
-                                    {item}
-                                </p>
-                                ) 
-                                })
+                            {tags ?
+                                tags
+                                    .map((item, index) => {
+                                    return (
+                                    <p key={index} className={styles.tags}>
+                                        {item}
+                                    </p>
+                                    ) 
+                                    }) : <div></div>
                             }
                         </section>
                     </div>

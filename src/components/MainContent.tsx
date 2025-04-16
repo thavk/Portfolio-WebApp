@@ -17,7 +17,7 @@ export const MainContent = () => {
     type Data = {
         title: string,
         subTitle: string,
-        tags: string[],
+        tags: string[] ,
         slug: string,
         cardImg: string,
     }

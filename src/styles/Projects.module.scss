@@ -19,60 +19,72 @@
     }
     
     .mainBody {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
+        display: flex;
+        flex-direction: column;
         gap: 15px;
         margin-top: 55px;
+        width: 100%;
+        height: 100%;
 
-        .tagsContainer {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
+        .topDiv {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            max-height: 37px;
-            margin: 0 20px 20px 20px;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
 
-            @media (width <= 1700px) {
-                margin-bottom: 10px;
-                max-height: 32px;
-            }
-            
-            .tags {
-                margin: 0px;
-                background-color: #464646;
-                padding: 7px;
-                border-radius: 20px;
-            
-                @media (width <= 1700px) {
-                    height: 10px;
-                    width: auto;
-                    font-size: 10px;
+
+            .tagsContainer {
+                gap: 15px;
+                max-height: 37px;
+                flex-wrap: wrap;
+                display: flex;
+                margin: 100px;
+                
+                .tags {
+                    margin: 0px;
+                    background-color: #464646;
+                    padding: 9px;
+                    border-radius: 16px;
                 }
             }
-        }
 
-        .imageContainer {
-            display: inline-flex;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            flex-direction: row;
-            grid-column: 2 / span 2;
-            grid-row: 1 / 1;
-            width: 100%;
-            height: auto;
-            margin-right: 20px;
-            .image {
-                margin: 0 25px 10px 25px;
-                border-radius: 8px;
+            .imageContainer {
+                scroll-behavior: smooth;
+                margin: 50px 100px 0 0;
+                width: 400px;
+                display: inline-flex;
+                flex-direction: row;
+                overflow-x: scroll;
+                overflow-y: hidden;
+
+                .image {
+                    margin: 0 25px 10px 25px;
+                    border-radius: 8px;
+                    height: 370px;
+                    width: 370px;
+                }
+            }
+
+            .imageContainer::-webkit-scrollbar {
+                width: 12px;
+            }
+            
+            .imageContainer::-webkit-scrollbar-thumb {
+                background-color: #363636;
+                border-radius: 10px;
+            }
+            
+            .imageContainer::-webkit-scrollbar-thumb:hover {
+                background-color: #555;
+            }
+            
+            .imageContainer::-webkit-scrollbar-track {
+                background: #2b2a2a;
+                border-radius: 15px;
             }
         }
 
         .descriptionContainer {
-            grid-column: 1 / 2 ;
-            grid-row: 2 / 2;
             background-color: #4646464f;
             height: 250px;
             width: 450px;

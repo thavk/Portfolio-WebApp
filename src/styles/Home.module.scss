@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; // Stops sideways scrolling
+    overflow-x: hidden;
     width: 100%;
     min-height: 100%;
     font-family: "Inter";
@@ -245,10 +245,12 @@ button:hover {
     border-radius: 12px 12px 0px 0px;
     width:350px;
     height:150px;
+    
     @media (width <= 1700px) {
         width: 272px;
         height: 112px;
     }
+
     @media (width <= 1290px) {
         width: 175px;
         height: 75px;
@@ -260,4 +262,3 @@ button:hover {
      color: white;
      font-size: 20px;
 }
-
