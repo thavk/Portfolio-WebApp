@@ -30,41 +30,61 @@
             display: flex;
             flex-direction: row;
             width: 100%;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 100px;
 
+            @media (width <= 1750px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+            }
 
             .tagsContainer {
-                gap: 15px;
-                max-height: 37px;
+                gap: 10px;
                 flex-wrap: wrap;
                 display: flex;
-                margin: 100px;
-                
+                padding: 2%;
+                width: 100%;
+                max-width: 200px;
+                background-color: #47474759;
+                justify-content: flex-start;
+                border-radius: 20px;
                 .tags {
                     margin: 0px;
                     background-color: #464646;
-                    padding: 9px;
-                    border-radius: 16px;
+                    padding: 10px;
+                    border-radius: 22px;
+                    height: 18px;
                 }
             }
 
             .imageContainer {
                 scroll-behavior: smooth;
-                margin: 50px 100px 0 0;
-                width: 400px;
+                height: 350px;
+                width: 450px;
                 display: inline-flex;
                 flex-direction: row;
-                overflow-x: scroll;
-                overflow-y: hidden;
+                overflow: hidden;
+
+                .imageSlider {
+                    display: flex;
+                    flex-direction: row;
+                    overflow: hidden;
+                    width: 450px;
+                    height: 350px;
+                    transition: transform 0.4s ease-in-out;
+                }
 
                 .image {
                     margin: 0 25px 10px 25px;
                     border-radius: 8px;
-                    height: 370px;
-                    width: 370px;
+                    height: 320px;
+                    width: 420px;
                 }
             }
-
+            
             .imageContainer::-webkit-scrollbar {
                 width: 12px;
             }
@@ -86,13 +106,34 @@
 
         .descriptionContainer {
             background-color: #4646464f;
-            height: 250px;
-            width: 450px;
+            height: 450px;
+            width: 80%;
             border-radius: 8px;
+            margin: 50px 0 40px 0;
+            align-self: center;
+            overflow-y: scroll;
             .description {
-                
+                margin: 20px;
+                font-size: 20px;
             }
+        }
+
+        .descriptionContainer::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        .descriptionContainer::-webkit-scrollbar-thumb {
+            background-color: #363636;
+            border-radius: 10px;
+        }
+        
+        .descriptionContainer::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+        
+        .descriptionContainer::-webkit-scrollbar-track {
+            background: #2b2a2a;
+            border-radius: 15px;
         }
     }
 }
-

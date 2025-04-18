@@ -2,8 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import { projects } from "../data/projects";
 import styles from "../styles/Projects.module.scss";
-import { beforeEach } from "node:test";
-import { clear } from "console";
+
 
 type ProjectType = {
     title: string,
@@ -27,7 +26,6 @@ export const Projects = () => {
         return <div>Project not found.</div>
     }
 
-
     return (
         <section className={styles.main}>
             <div className={styles.titles}>
@@ -43,12 +41,14 @@ export const Projects = () => {
                             })
                         }
                     </div>
-                    <div id="scrollable" className={styles.imageContainer}>
-                        {currentProject.projectImages
-                            .map((item: string | undefined, index: React.Key | null | undefined) => {
-                                return <img key={index} src={item} alt={`Project image ${index + 1}`} width="600px" height="337px" className={styles.image} />
-                            })  
-                        }
+                    <div className={styles.imageContainer}>
+                        <button className={styles.leftArrow}>{'<'}</button>
+                                {currentProject.projectImages
+                                    .map((item: string | undefined, index: React.Key | null | undefined) => {
+                                        return <img key={index} src={item} alt={`Project image ${index + 1}`} width="600px" height="337px" className={styles.image} />
+                                    })  
+                                }
+                        <button className={styles.rightArrow}>{'>'}</button>
                     </div>
                 </div>
                 <div className={styles.descriptionContainer}>
