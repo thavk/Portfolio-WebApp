@@ -2,7 +2,7 @@ const unholyLotus = {
     title: 'Unholy Lotus',
     subTitle: 'Guild Management App',
     cardImg: "../../src/assets/header-background.jpg",
-    projectImages: ["../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg"],
+    projectImages: ["../../src/assets/transferir.jpg", "../../src/assets/transferir2.jpg", "../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg"],
     tags: ['React', 'Jest', 'HTML', 'Jest', 'HTML', 'Jest'],
     video: ['video1', 'video2', 'video3'],
     description: 'This app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild PointsThis app manages Guild Points',
@@ -12,7 +12,7 @@ const unholyLotus = {
 };
 
 const unholyLotus1 = {
-    title: 'Unholy Lotus',
+    title: 'Unholy Macarena',
     subTitle: 'Guild Management App',
     cardImg: "../../src/assets/header-background.jpg",
     projectImages: ["../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg", "../../src/assets/header-background.jpg"],
@@ -21,7 +21,7 @@ const unholyLotus1 = {
     description: 'This app manages Guild Points',
     appUrl: '',
     github: '',
-    slug: 'unholy-lotus',
+    slug: 'unholy-macarena',
 };
 
 const unholyLotus2 = {
