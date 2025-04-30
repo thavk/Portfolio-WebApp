@@ -61,15 +61,29 @@
             }
 
             .imageContainer {
-                height: 350px;
+                height: 320px;
                 width: 450px;
                 display: inline-flex;
-
-                .image {
+                
+                .imgButton {
+                    display: flex;
+                    padding: 0;
                     margin: 0 20px;
                     border-radius: 8px;
-                    height: 320px;
-                    width: 420px;
+                    border: none;
+
+                    
+                    .image {
+                        border-radius: 8px;
+                        height: 322px;
+                        width: 422px;
+                        overflow: hidden
+                    }
+                }
+
+                .imgButton:hover {
+                    transform: scale(1.03);
+                    cursor: pointer; 
                 }
 
                 .arrowContainer {
@@ -85,6 +99,11 @@
                         background-color: #a3a2a221;
                         color: rgba(255, 255, 255, 0.699);
                         border: none;
+                    }
+
+                    .arrow:hover {
+                        cursor: pointer; 
+                        background-color: #bbb9b976
                     }
                 }
 

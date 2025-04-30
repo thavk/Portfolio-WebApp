@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { projects } from "../data/projects";
 import styles from "../styles/Projects.module.scss";
+import { ImageDisplay } from "../features/ImageDisplay";
 
 
 type ProjectType = {
@@ -22,7 +23,7 @@ export const Projects = () => {
     const currentProject = projects.find((item) => item.slug === params.id) as ProjectType | undefined;
     const [currentIndex, setCurrentIndex] = useState(0);
     const [displayedImage, setDisplayedImage] = useState(currentProject?.projectImages[currentIndex]);
-
+    const [bigPicture, setBigPicture] = useState(false);
 
     if (!currentProject) {
         return <div>Project not found.</div>
@@ -35,15 +36,16 @@ export const Projects = () => {
         if (imageInd > imageArray.length - 1) newIndex = 0;
         else if (imageInd < 0) newIndex = imageArray.length - 1;
         else newIndex = imageInd;
-        console.log(currentIndex, newIndex)
 
         setCurrentIndex(newIndex)
         setDisplayedImage(imageArray[newIndex]);
     };
 
 
+
     return (
         <section className={styles.main}>
+            {bigPicture ? <ImageDisplay img={displayedImage} list={currentProject.projectImages}/> : undefined}
             <div className={styles.titles}>
                 <h1>{currentProject.title}</h1>
                 <h2>{currentProject.subTitle}</h2>
@@ -61,8 +63,13 @@ export const Projects = () => {
                         <div className={styles.arrowContainer}>
                             <button className={styles.arrow} onClick={() => imageSelector(currentIndex - 1)}>{'<'}</button>
                         </div>
-                            <img src={displayedImage} alt='Project image' className={styles.image}   width={420}
-  height={320}/>
+                            <button className={styles.imgButton} onClick={() => {
+                                setBigPicture(true)
+                                console.log(bigPicture)}
+                                }>
+                                <img src={displayedImage} alt='Project image' className={styles.image}   width={420}
+                                height={320}/>
+                            </button>
                         <div className={styles.arrowContainer}>
                             <button className={styles.arrow} onClick={() => imageSelector(currentIndex + 1)}>{'>'}</button>
                         </div>

@@ -105,6 +105,7 @@ button:hover {
     height: 320px;
     display: flex;
     flex-direction: column;
+
     @media (width <= 1700px) {
         width: 272px;
         height: 260px;
@@ -216,10 +217,13 @@ button:hover {
     background-color: #1b1b1b;
     border-color: #15a1284f;
     border-radius: 15px;
+    cursor: pointer; 
 }
 
 .buttonCard:hover .card {
-    box-shadow: 0 0 70px #000000;
+    box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
+    -webkit-box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
+    -moz-box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
 }
 
 .textInput {
