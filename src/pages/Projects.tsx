@@ -45,7 +45,7 @@ export const Projects = () => {
 
     return (
         <section className={styles.main}>
-            {bigPicture ? <ImageDisplay img={displayedImage} list={currentProject.projectImages}/> : undefined}
+            {bigPicture ? <ImageDisplay onClose={() => setBigPicture(false)} img={displayedImage} list={currentProject.projectImages}/> : undefined}
             <div className={styles.titles}>
                 <h1>{currentProject.title}</h1>
                 <h2>{currentProject.subTitle}</h2>

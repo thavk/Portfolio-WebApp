@@ -2,8 +2,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/Home.module.scss";
 
-export const Home = () => {
-    
+export const Home = () => {   
     return (
         <div className={styles.home}>
             <header className={styles.header}>
