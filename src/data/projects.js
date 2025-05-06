@@ -34,7 +34,7 @@ const unholyLotus2 = {
     description: 'This app manages Guild Points',
     appUrl: '',
     github: '',
-    slug: 'unholy-lotus',
+    slug: 'unholy-lotus2',
 };
 
 const unholyLotus3 = {
@@ -47,7 +47,7 @@ const unholyLotus3 = {
     description: 'This app manages Guild Points',
     appUrl: '',
     github: '',
-    slug: 'unholy-lotus',
+    slug: 'unholy-lotus1',
 };
 
 

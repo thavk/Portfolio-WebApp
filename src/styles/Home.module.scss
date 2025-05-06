@@ -106,6 +106,16 @@ button:hover {
     display: flex;
     flex-direction: column;
 
+    h3 {
+        font-size: 19px;
+        margin: 12px 0 4px 0;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin: 12px 0 4px 0;
+    }
+
     @media (width <= 1700px) {
         width: 272px;
         height: 260px;
@@ -136,7 +146,8 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    max-height: 37px;
+    max-height: 60px;
+    height: auto;
     margin: auto 20px 20px 20px;
     overflow-y: auto;
     @media (width <= 1700px) {
@@ -169,7 +180,7 @@ button:hover {
     justify-content: center; 
     width: 100%;
     gap: 60px;
-    padding: 20px 20px 0 20px;
+    padding: 50px 20px 50px 20px;
     max-height: 800px;
     overflow-y: auto;
     background-color: rgb(22, 22, 22);
@@ -221,9 +232,9 @@ button:hover {
 }
 
 .buttonCard:hover .card {
-    box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
-    -webkit-box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
-    -moz-box-shadow: -14px 19px 42px 0px rgba(163,157,157,0.47);
+    box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
+    -webkit-box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
+    -moz-box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
 }
 
 .textInput {

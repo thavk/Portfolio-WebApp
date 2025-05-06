@@ -29,6 +29,9 @@ export const ImageDisplay = ({ list, img, onClose }: ImageDisplayProps) => {
     return (
         <div className={styles.bigImage} onClick={onClose}>
             <div onClick={(e) => e.stopPropagation()}>
+                <div className={styles.close}>
+                    <button onClick={onClose}>x</button>
+                </div>
                 <div className={styles.leftArrow}>
                     <button onClick={() => imageSelector(imgIndex - 1)}>{'<'}</button>
                 </div>
@@ -39,6 +42,11 @@ export const ImageDisplay = ({ list, img, onClose }: ImageDisplayProps) => {
                 </div>
                 <div className={styles.rightArrow}>
                     <button onClick={() => imageSelector(imgIndex + 1)}>{'>'}</button>
+                </div>
+                <div className={styles.bottomDisplay}>
+                    {list.map((item, index) => {
+                        return <img src={item} key={index} onClick={() => imageSelector(index)}/>
+                    })}
                 </div>
             </div>
         </div>

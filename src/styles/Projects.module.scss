@@ -4,12 +4,11 @@
     flex-direction: column;
     align-items: center;
 
+
     .bigImage {
         z-index: 2;
         height: 100%;
         width: 100%;
-        align-content: center;
-        justify-items: center;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.398);
         top: 0;
@@ -17,6 +16,59 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+
+        .bottomDisplay {
+            bottom: 0px;
+            left: 0;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f93;
+            width: 100%;
+            gap: 20px;
+            padding: 20px;
+            overflow: visible;
+            
+            img {
+                margin: 0 8px;
+                padding: 2px;
+                width: 157.8px;
+                height: 143px;
+                border: 3px solid transparent;
+                transition: transform 0.2s, border-color 0.2s;
+            }
+
+            img:hover {
+                transform: scale(1.05);
+                border: 3px solid white;
+            }
+        }
+
+
+        .close {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+
+            button {
+                width: 41px;
+                height: 41px;
+                font-size: 27px;
+                padding: 2px;
+                border-radius: 100px;
+                background-color: #fdfdfd20;
+                color: rgba(255, 255, 255, 0.699);
+                border: none;
+                justify-content: center;
+            }
+
+            button:hover {
+                cursor: pointer; 
+                background-color: #bbb9b976;
+                transform: scale(1.05);
+            }
+        }
 
         .leftArrow {
             position: absolute;
@@ -76,9 +128,10 @@
             display: flex;
             flex-direction: row;
             
+            
             .image {
-                height: 70vh;
-                width: auto;
+                height: 837px;
+                width: 1122px;
                 overflow: visible;
             }
         }
@@ -126,10 +179,10 @@
                 flex-wrap: wrap;
                 display: flex;
                 padding: 2%;
-                width: 100%;
+                width: auto;
                 max-width: 200px;
                 background-color: #47474759;
-                justify-content: flex-start;
+                justify-content: center;
                 border-radius: 20px;
                 .tags {
                     margin: 0px;
@@ -144,6 +197,8 @@
                 height: 320px;
                 width: 450px;
                 display: inline-flex;
+                transition: opacity 0.3s ease;
+                opacity: 1;
                 
                 .imgButton {
                     display: flex;
@@ -151,19 +206,19 @@
                     margin: 0 20px;
                     border-radius: 8px;
                     border: none;
-
+                    transition: transform 0.3s;
                     
                     .image {
                         border-radius: 8px;
                         height: 322px;
                         width: 422px;
-                        overflow: hidden
+                        overflow: hidden;
                     }
                 }
 
                 .imgButton:hover {
                     transform: scale(1.03);
-                    cursor: pointer; 
+                    cursor: pointer;
                 }
 
                 .arrowContainer {
@@ -210,15 +265,21 @@
 
         .descriptionContainer {
             background-color: #4646464f;
-            height: 450px;
+            min-height: 400px;
+            max-height: 1200px;
+            height: auto;
             width: 80%;
             border-radius: 8px;
-            margin: 50px 0 40px 0;
+            margin: 100px 0 40px 0;
             align-self: center;
             overflow-y: scroll;
+            padding: 15px;
+
             .description {
+                text-align: center;
                 margin: 20px;
                 font-size: 20px;
+                line-height: 30px;
             }
         }
 

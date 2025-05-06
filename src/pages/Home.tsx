@@ -21,7 +21,7 @@ export const Home = () => {
             </main>
             <footer className={styles.footer}>
                 <h3>Contact:</h3>
-                <p>+351924713484</p>    
+                <p>+351 924 713 484</p>    
                 <p>marco_estela_ferreira@hotmail.com</p>
                 <div>
                     <img src="/src/assets/github-mark-white.png" alt="GitHub Icon" height='17 px'></img>
