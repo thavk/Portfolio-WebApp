@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; // Stops sideways scrolling
+    overflow-x: hidden;
     width: 100%;
     min-height: 100%;
     font-family: "Inter";
@@ -23,6 +23,10 @@ body, html {
     height: 60px;
     font-size: 4rem;
     background-color: #1A1A1A;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .siteIcon {
@@ -88,7 +92,7 @@ button:hover {
     padding-bottom: 10px;
     width: 50%;
     min-width: 600px;
-    max-width: 1100px;
+    max-width: 1200px;
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -102,15 +106,99 @@ button:hover {
     text-align: center;
     color: white;
     width: 350px;
-    height: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 19px;
+        margin: 12px 0 4px 0;
+
+        @media (width <= 1700px) {
+            font-size: 15px;
+        }
+        @media (width <= 1290px) {
+            font-size: 13px;
+        }
+    }
+
+    h4 {
+        font-size: 14px;
+        margin: 12px 0 4px 0;
+
+        @media (width <= 1700px) {
+            font-size: 12px;
+        }
+        @media (width <= 1290px) {
+            font-size: 11px;
+        }
+    }
+
     @media (width <= 1700px) {
-        width: 262px;
-        height: 225px;
+        width: 272px;
+        height: 260px;
     }
     @media (width <= 1290px) {
         width: 175px;
-        height: 150px;
+        height: 160px;
+        overflow: hidden;
     }
+}
+
+.tags {
+    margin: 0px;
+    background-color: #464646;
+    padding: 7px;
+    border-radius: 20px;
+
+    @media (width <= 1700px) {
+        height: 10px;
+        width: auto;
+        font-size: 10px;
+    }
+
+    @media (width <= 1290px) {
+        visibility: hidden;
+    }
+}
+
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 45px;
+    height: auto;
+    margin: auto 20px 20px 20px;
+    overflow-y: auto;
+
+    @media (width <= 1700px) {
+        margin-bottom: 10px;
+        max-height: 32px;
+    }
+
+    @media (width <= 1290px) {
+        visibility: hidden;
+    }
+}
+
+.tagsContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tagsContainer::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    border-radius: 10px;
+}
+
+.tagsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.tagsContainer::-webkit-scrollbar-track {
+    background: #2b2a2a;
+    border-radius: 15px;
 }
 
 .cardcontainer {
@@ -119,10 +207,13 @@ button:hover {
     justify-content: center; 
     width: 100%;
     gap: 60px;
-    padding: 20px 20px 0 20px;
+    padding: 50px 20px 50px 20px;
     max-height: 800px;
     overflow-y: auto;
     background-color: rgb(22, 22, 22);
+    @media (width <= 1700px) {
+        padding: 0px;
+    }
 }
 
 .cardcontainer::-webkit-scrollbar {
@@ -164,10 +255,13 @@ button:hover {
     background-color: #1b1b1b;
     border-color: #15a1284f;
     border-radius: 15px;
+    cursor: pointer; 
 }
 
 .buttonCard:hover .card {
-    box-shadow: 0 0 70px #000000;
+    box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
+    -webkit-box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
+    -moz-box-shadow: 1px 5px 30px 10px rgba(163,157,157,0.47);
 }
 
 .textInput {
@@ -193,10 +287,12 @@ button:hover {
     border-radius: 12px 12px 0px 0px;
     width:350px;
     height:150px;
+    
     @media (width <= 1700px) {
-        width: 262px;
+        width: 272px;
         height: 112px;
     }
+
     @media (width <= 1290px) {
         width: 175px;
         height: 75px;
@@ -208,5 +304,3 @@ button:hover {
      color: white;
      font-size: 20px;
 }
-
-
