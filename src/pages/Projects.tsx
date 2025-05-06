@@ -52,12 +52,18 @@ export const Projects = () => {
             </div>
             <div className={styles.mainBody}>
                 <div className={styles.topDiv}>
-                    <div className={styles.tagsContainer}>
-                        {currentProject.tags
-                            .map((item: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) => {
-                                return <p key={index} className={styles.tags}>{item}</p>
-                            })
-                        }
+                    <div className={styles.compartment}>
+                        <div className={styles.tagsContainer}>
+                            {currentProject.tags
+                                .map((item: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) => {
+                                    return <p key={index} className={styles.tags}>{item}</p>
+                                })
+                            }
+                        </div>
+                        <div className={styles.links}>
+                            <p><a href={currentProject.appUrl}>Website</a></p>
+                            <p><a href={currentProject.github}>Repository</a></p>
+                        </div>
                     </div>
                     <div className={styles.imageContainer}>
                         <div className={styles.arrowContainer}>

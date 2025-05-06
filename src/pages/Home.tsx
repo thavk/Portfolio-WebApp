@@ -6,15 +6,22 @@ export const Home = () => {
     return (
         <div className={styles.home}>
             <header className={styles.header}>
-                <h1 className={styles.siteIcon}>Marco's Corner</h1>
+                <Link to='/'>
+                    <h1 className={styles.siteIcon}>Marco's Corner</h1>
+                </Link>
             </header>
+
             <main className={styles.main}>
                 <nav className={styles.nav}>
-                    <Link to='/about'>
-                        <button className={styles.button}>About me</button>
+                    <Link to=''>
+                        <button className={styles.button} onClick={() => {
+                            alert('Under construction!')
+                        }}>About me</button>
                     </Link>
-                    <Link to='/blog'>
-                        <button className={styles.button}>Blog/Articles</button>
+                    <Link to=''>
+                        <button className={styles.button} onClick={() => {
+                            alert('Under construction!')
+                        }}>Blog/Articles</button>
                     </Link>
                 </nav>
                 <Outlet/>   
