@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/Home.module.scss";
 
-export const Home = () => {   
+export const Home = () => {
     return (
         <div className={styles.home}>
             <header className={styles.header}>
@@ -24,21 +24,21 @@ export const Home = () => {
                         }}>Blog/Articles</button>
                     </Link>
                 </nav>
-                <Outlet/>   
+                <Outlet/>
             </main>
             <footer className={styles.footer}>
                 <h3>Contact:</h3>
-                <p>+351 924 713 484</p>    
+                <p>+351 924 713 484</p>
                 <p>marco_estela_ferreira@hotmail.com</p>
                 <div>
                     <img src="/src/assets/github-mark-white.png" alt="GitHub Icon" height='17 px'></img>
-                    <a href="https://github.com/silomeno" className={styles.links}>GitHub</a>    
-                </div>    
+                    <a href="https://github.com/thavk" className={styles.links}>GitHub</a>
+                </div>
                 <div>
                     <img src="/src/assets/InBug-white.png" alt="LinkedIn Icon" height='16 px'></img>
-                    <a href="https://www.linkedin.com/in/marco-ferreira-9a5246296/" className={styles.links}>LinkedIn</a>  
-                </div>  
-            </footer> 
+                    <a href="https://www.linkedin.com/in/marco-ferreira-9a5246296/" className={styles.links}>LinkedIn</a>
+                </div>
+            </footer>
         </div>
     );
 };
