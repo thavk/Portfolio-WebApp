@@ -62,7 +62,7 @@ export const Projects = () => {
                             }
                         </div>
                         <div className={styles.links}>
-                            <p><a href={currentProject.appUrl}>Website</a></p>
+                            {currentProject.appUrl ? <p><a href={currentProject.appUrl}>Website</a></p> : undefined}
                             <p><a href={currentProject.github}>Repository</a></p>
                         </div>
                     </div>
@@ -71,10 +71,7 @@ export const Projects = () => {
                         <div className={styles.arrowContainer}>
                             <button className={styles.leftArrow} onClick={() => imageSelector(currentIndex - 1)}>{'<'}</button>
                         </div>
-                            <button className={styles.imgButton} onClick={() => {
-                                setBigPicture(true)
-                                console.log(bigPicture)}
-                                }>
+                            <button className={styles.imgButton} onClick={() => setBigPicture(true)}>
                                 <img src={displayedImage} alt='Project image' className={styles.image}   width={420}
                                 height={320}/>
                             </button>

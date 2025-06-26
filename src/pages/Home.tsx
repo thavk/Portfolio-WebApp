@@ -13,10 +13,8 @@ export const Home = () => {
 
             <main className={styles.main}>
                 <nav className={styles.nav}>
-                    <Link to=''>
-                        <button className={styles.button} onClick={() => {
-                            alert('Under construction!')
-                        }}>About me</button>
+                    <Link to='about-me'>
+                        <button className={styles.button}>About me</button>
                     </Link>
                     <Link to=''>
                         <button className={styles.button} onClick={() => {

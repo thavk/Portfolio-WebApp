@@ -16,6 +16,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
         @media (width < 1150px) {
             visibility: hidden;
@@ -35,6 +36,7 @@
             gap: 20px;
             padding: 20px;
             overflow: visible;
+            cursor: default;
 
             img {
                 margin: 0 8px;
@@ -134,6 +136,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            cursor: default;
 
             .image {
                 height: 837px;
@@ -268,6 +271,7 @@
                         background-color: #a3a2a221;
                         color: rgba(255, 255, 255, 0.699);
                         border: none;
+                        cursor: pointer;
 
                         @media (width < 550px) {
                             position: absolute;
@@ -286,6 +290,7 @@
                         background-color: #a3a2a221;
                         color: rgba(255, 255, 255, 0.699);
                         border: none;
+                        cursor: pointer;
 
                         @media (width < 550px) {
                             position: absolute;
