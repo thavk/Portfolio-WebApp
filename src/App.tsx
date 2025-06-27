@@ -6,7 +6,7 @@ import { MainContent } from './components/MainContent';
 
 function App() {
     return (
-        <Router>
+        <Router basename='/Portfolio-WebApp/'>
             <Routes>
                 <Route path='/' element={<Home />}>
                     <Route index element={<MainContent />}/>

@@ -17,7 +17,7 @@ export const Home = () => {
                     <Link to='about-me'>
                         <button className={styles.button}>About me</button>
                     </Link>
-                    <Link to=''>
+                    <Link to='/'>
                         <button className={styles.button} onClick={() => {
                             alert('Under construction!')
                         }}>Blog/Articles</button>

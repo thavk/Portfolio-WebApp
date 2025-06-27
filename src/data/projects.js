@@ -1,10 +1,11 @@
 import portfolioImg1 from '../assets/portfolio/portfolioImg1.png';
 import portfolioImg2 from '../assets/portfolio/portfolioImg2.png';
-
+import leetcodecard from '../assets/portfolio/leetcodecard.jpg';
+import portfolioCardHeader from '../assets/portfolio/portfolio-card-header.png';
 const portfolioApp = {
     title: 'Portfolio',
     subTitle: 'Portfolio Web App',
-    cardImg: "../../src/assets/portfolio/portfolio-card-header.png",
+    cardImg: portfolioCardHeader ,
     projectImages: [portfolioImg1, portfolioImg2],
     tags: ['React', 'SCSS', 'HTML5', 'JS', 'NodeJS'],
     video: ['video1', 'video2', 'video3'],
@@ -23,7 +24,7 @@ This app is both a personal milestone and a live demonstration of how far I’ve
 const leetcodeTrack  = {
     title: 'LeetCode Tracker',
     subTitle: 'LeetCode Solutions',
-    cardImg: "../../src/assets/portfolio/leetcodecard.jpg",
+    cardImg: leetcodecard,
     projectImages: undefined,
     tags: ['DSA', 'JS'],
     video: ['video1', 'video2', 'video3'],
@@ -34,7 +35,7 @@ Solutions are neatly organized by topic (e.g., Binary Search, Arrays, Strings) a
 This project isn't just a folder of files — it's a system that mirrors how I learn: methodical, consistent, and scalable. It's where I refine my algorithmic thinking, strengthen problem-solving patterns, and build the technical foundation that powers all my projects.
 `,
     appUrl: undefined,
-    github: 'https://github.com/thavk/leetcode-tracker',
+    github: 'https://github.com/thavk/Leetcode-track',
     slug: 'leetcode-tracker',
 };
 export const projects = [leetcodeTrack, portfolioApp];
