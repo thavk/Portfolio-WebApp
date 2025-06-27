@@ -23,7 +23,7 @@ This app is both a personal milestone and a live demonstration of how far I’ve
 const leetcodeTrack  = {
     title: 'LeetCode Tracker',
     subTitle: 'LeetCode Solutions',
-    cardImg: "../src/assets/leetcodecard.jpg",
+    cardImg: "../../src/assets/portfolio/leetcodecard.jpg",
     projectImages: undefined,
     tags: ['DSA', 'JS'],
     video: ['video1', 'video2', 'video3'],
