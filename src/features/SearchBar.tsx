@@ -16,7 +16,7 @@ export const SearchBar = ({value, onChange}: SearchBarProps) => {
                 id="searchbar" 
                 name="searchbar" 
                 className={styles.textInput} 
-                placeholder="search for @tag or Project. Example: @React or Project"
+                placeholder="Search for tag/technology Ex.: React"
                 value={value}
                 onChange={onChange}
             />        

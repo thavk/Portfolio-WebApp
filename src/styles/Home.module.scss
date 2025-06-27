@@ -19,13 +19,19 @@ body, html {
 
 .header {
     width: 100%;
-    text-align: center;
+    text-align: start;
     height: 60px;
     font-size: 4rem;
     background-color: #1A1A1A;
 
     a {
+        display: flex;
         text-decoration: none;
+        width: fit-content;
+
+        h1 {
+            width: fit-content;
+        }
     }
 }
 
@@ -38,7 +44,7 @@ body, html {
 }
 
 .footer {
-    margin-top: auto;  
+    margin-top: auto;
     padding-bottom: 30px;
     background-color: #1A1A1A;
     width: 100%;
@@ -62,7 +68,7 @@ body, html {
 }
 
 .button {
-    background: #444444; 
+    background: #444444;
     color: white;
     border-radius: 0px;
     padding: 20px 40px;
@@ -150,7 +156,8 @@ button:hover {
     background-color: #464646;
     padding: 7px;
     border-radius: 20px;
-
+    min-width: 25px;
+    text-align: center;
     @media (width <= 1700px) {
         height: 10px;
         width: auto;
@@ -204,7 +211,7 @@ button:hover {
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
     gap: 60px;
     padding: 50px 20px 50px 20px;
@@ -255,7 +262,7 @@ button:hover {
     background-color: #1b1b1b;
     border-color: #15a1284f;
     border-radius: 15px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .buttonCard:hover .card {
@@ -287,7 +294,13 @@ button:hover {
     border-radius: 12px 12px 0px 0px;
     width:350px;
     height:150px;
-    
+    overflow: hidden;
+
+    img {
+        height: 320px;
+        width: 100%;
+    }
+
     @media (width <= 1700px) {
         width: 272px;
         height: 112px;
