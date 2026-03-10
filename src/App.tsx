@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
@@ -6,7 +6,7 @@ import { MainContent } from './components/MainContent';
 
 function App() {
     return (
-        <Router basename='/Portfolio-WebApp/'>
+        <Router>
             <Routes>
                 <Route path='/' element={<Home />}>
                     <Route index element={<MainContent />}/>

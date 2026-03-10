@@ -9,41 +9,84 @@ export const About = () => {
             <div className={styles.textContainer}>
                 <ReactMarkdown>
                     {`
-##
+# About Me
 
-Hello, I am Marco, as you've probably already guessed.
+Hello. I'm Marco.
 
-I thought about writing a short 'About Me' just a couple lines long to paint a simple and appealing picture of myself. But the truth is, that isn't quite what I'd like people to see me as. So, here we go.
+My path into software engineering hasn’t been traditional. In many ways, it began with a lifelong fascination for complex systems and the challenge of understanding how things work.
 
-## Beginnings
+## Early Curiosity
 
-&nbsp;&nbsp;&nbsp;&nbsp;The story begins in a little Portuguese city by the ocean called Vila do Conde. There lived a little misfit, known by many nicknames, each of them implying some degree of destruction. Although strange and often feeling out of place around his same age peers, he was a captivating, righteous young boy with a strong sense of fairness - who, despite that, loved the idea of walking the line... and even more, stepping out of it. He was sensitive and soft inside, loved fantasy books and the complexity of the world, loved animal and dinosaur encyclopedias, and space. This he kept hidden to the outside. Since, in the midst of the naiveness of youth he learned to hide himself in a shell of toughness, that's what he understood respect entailed.
+I grew up in a small coastal city in Portugal called Vila do Conde. As a kid, I was deeply curious about the world. I read fantasy novels, devoured encyclopedias about animals and dinosaurs, and obsessed over anything related to space.
 
-&nbsp;&nbsp;&nbsp;&nbsp;His first years of school were effortless. But school wasn’t exactly his favorite place. He was a student of excellence on paper, but was often bored and restless - his mind always drifting to questions and ideas that didn’t quite fit the curriculum. You see, this little ruckus of a kid loved challenges and things that he didn't quite understand, he yearned for struggle. Unfortunately for him, he found the perfect place for that, a place where all dreams and fantasies become reality, a place with the absolute perfect amount of those challenges he so much sought - **Video Games**. When things got easy, no problem - he just moved to the next level, or booted a new game. Better yet, the supreme challenge, competitive multiplayer games, with rating algorithms that place you in matches based on your skill level relative to the rest of that game's player base, or, in other words, the endless seek for number one. And, let me tell you something - he was damn good at it. He soon started climbing to the higher percentiles in these video games, playing with and against these game's elite, he started meeting people, and through that came the realization that he had talent. The more he climbed in the ranking ladders, the more dull and boring school seemed, the more he drifted away from it.
+School came easily at first. I performed well without needing to study much, which unfortunately meant I never developed strong academic discipline early on.
 
-## Collapse
+Around that time I discovered competitive video games. What fascinated me was not just the entertainment, but the constant cycle of learning, failure, adaptation, and improvement. The better you got, the stronger your opponents became.
 
-&nbsp;&nbsp;&nbsp;&nbsp;By 7th grade, his previous carefree demeanor towards school started showing its flaws. And the crumbling began. The previous excellence student was now only a good enough student. His passion for biology and physics never dimmed, though, just like his familiarity with English, at which he became fluent at a young age due to his online passion. These subjects were supported by his extra-curricular interests. The others weren't. Now into his early adolescence, his identity under radical shaping, pressure from those around him started increasing. His performance was dissatisfying, it wasn't good enough anymore. Subjects weren't solvable with logic or intuition. The study habits weren't there, the discipline wasn't there, the unpaid debts of all of the previous years had silently grown and were now creeping up on him. He started falling into desperation, he tried studying, but to no effect. The excellence student was never to be seen. It was not enough. The more he failed to meet expectations, the further he retreated into his 'other world', the place where he felt just right. The place where he learned to fail and struggle, and then adapt. The place where he knew how to grow and become bigger, the place that would shelter him from his newly broken 'real world self'.
+That system of continuous challenge hooked me.
 
-## The Mask
+Over time I began climbing into the higher percentiles of competitive games and playing with elite players. Without realizing it, I was developing a deep appreciation for mastering complex systems.
 
-&nbsp;&nbsp;&nbsp;&nbsp;After very troubled years, and a descent into complete rebellion, our now soon-to-be young adult starts high school. A new mask has been crafted. An intricate mask of careless nonchalantness. A mask of 'I could do it if I cared enough to'. The social world is now ripe with opportunities, and apparently he is appreciated for this attitude. He is part of the cool kids now. He puts all his ability to bad use. He skips classes on a regular basis, walking on the edge of failing subjects because of it. The only thing keeping his GPA at a decent level is Biology, Physics and English (of course). By 12th grade, he goes through an even rougher period of time that lasts the entire first period of school, he doesn't show up to a single class. Although ridiculously, and somewhat impressively, he manages to not fail the year by pulling some clever trickery out of his sleeve. The fact that he did get away brought a considerable amount of space for him to rethink his approach to life. It wasn’t the grades that mattered. It was that, for the first time in years, he’d stopped running. He looked in the mirror and saw not a failure, but someone who was unfinished. Someone who’d mistaken hiding for healing, performance for peace. The mask fell, and he decided that he would do his best for the remaining of the year. From then on, he improved his grades drastically, and managed to finish highschool unscathed.
+Unfortunately, the more time I spent there, the less attention I paid to school.
 
-## Real Storm
+## Losing Direction
 
-&nbsp;&nbsp;&nbsp;&nbsp;The young Marco changed and it would seem like the happy ending (quite a mediocre one at that), like the turning point, the sun behind the clouds has finally arrived. The truth is, this was the point where the real storm started. A new obsession has formed, and this challenge was the biggest one I've ever faced. The new challenge consisted of a very simple task - cracking life. Why do I act contrary to what I believe is right? What is motivation? How do I know when I am biased or unbiased? Where does self-control come from? Why are humans biased? How do I know when my emotions are valid and when they are invalid? When am I behaving egotistically or not? What even is the ego, and what is the difference between it and confidence? What is happiness? - along with a lot of other questions. And this marked the beginning of a phase of seeking for answers. I started reading a lot of psychology, going through peer-reviewed literature, aimlessly devouring everything in sight. One gap year quickly turned into 2, and then 3.
+By the time I reached high school, the lack of discipline began to catch up with me.
 
-##
+I performed well in subjects that genuinely interested me, particularly biology, physics, and English. However, I struggled in areas that required consistent effort and study habits.
 
-&nbsp;&nbsp;&nbsp;&nbsp;These are incredibly deep questions, not from an objective standpoint, which took me a long time to realize, but from a subjective and personal standpoint. So, although this new phase of my life post high school was filled with sadness, aimlessness, and a nearly permanent state of hopelessness, I do not lament it, not only that, but I am also certain that it was necessary to my journey. Some of those questions are left unanswered and are most likely going to remain so for a long time, but others are either a lot clearer or engrained in my being. I didn't become a monk, or manage to achieve some egoless, perfectly selfless state, or anything remotely close to it. What I took from this was invaluable, though. The knowledge I accumulated throughout this time was still not leading me anywhere, even worse it was pushing me further down, the idea of being imperfect and unaware of my actions made me feel powerless. I was looking for a solution. Ironically, the most important realization that truly made me see the light at the end of the tunnel, wasn't finding answers - it was realizing that while understanding and theory are required, you can only discover these things in yourself through application and observation of whatever mechanism of human psychology you are trying to understand and, if not correct, at least be aware of. It's a consistent constant task, there is no fix that will bring most of this stuff to you, no ha-ha moment. It's rather a lifelong pursuit for clarity.
+At the same time, I developed a kind of defensive indifference. The classic attitude of "I could do it if I cared enough to." It worked socially, but it was not an honest reflection of my potential.
 
-## Happy Start
+During my final year of high school I barely attended classes. Somehow, through a mix of improvisation and last minute effort, I managed to graduate.
 
-&nbsp;&nbsp;&nbsp;&nbsp;And now, finally, the happy start - not ending - has arrived. Around the second year and a half of 'gap years', I wanted to distance myself from my social circle, and everyday life. I needed some time to be alone with myself with no social pressures, no familiar faces, nothing that would remind me of who I was or who I had to become. I needed to rebuild myself. So I went to live in a small city in the mountains, I rented a little apartment and found a job, and so it started. I'll spare you the details of boring everyday life, but it was refreshing, and it allowed me to see what I had actually achieved, which in physical or materialistic terms was meaningless, but I finally started to see myself. What I wanted, where I wanted to go, who I wanted to become, the understanding of myself and people that I built. I realized that I was just delaying the inevitable, I am not made for structured academic environments. School's progression or structure is not what I need. One of my biggest strengths is being able to learn while jumping multiple steps, and school unfortunately does not foster that type of learning. My ability to quickly become a very strong player in video games didn't signal laziness, and something that allowed me to see that clearly was that somewhere along these 'gap years' I picked up online chess. In less than a year, I became a very strong player, I got to the 99.6th percentile. This reflection showed me that I had a talent for solving complex systems, for understanding complicated ideas and a strong intuition. I've always wanted to follow Computer Science, and I do not believe  university to be the path that will lead me there. Which marked the beginning of my self-taught software engineer journey.
+That experience forced me to confront something uncomfortable. I was not incapable. I had simply avoided applying myself.
 
-## New Chapter
+## Searching for Answers
 
-&nbsp;&nbsp;&nbsp;&nbsp;The timing at which I met my mentor, Batuhan, couldn't be more impeccable. Having an experienced fullstack Senior Software Engineer watching over my shoulder was obviously one of those beautiful coincidences of life. I don't believe in fate, but if it is real this is what it looks like. He was a key piece in my growth and fast learning. He helped me set off on my learning journey. And pointed me in the right direction. I started Front End Engineer course at Codecademy, and moved through it quickly. During this course, which took me around 2-3 months, we worked on a few smaller practice projects so he could probe my growth and guide me. These projects were written mostly with React, with him working on the backend, so I got to practice Routing, Fetching, Object oriented programming, etc... I was growing fast. Around month 4, I started solving data structures and algorithms problems, which I completely fell in love with. By month 6, I moved back to my home town completely reborn, a lot in me had changed. My hunger was ever increasing and I decided to dive deeper into computer systems. I started learning about memory and CPU. The rest is story...
+After graduating, I entered a period of deep introspection. I became obsessed with understanding human behavior and motivation.
+
+- Why do people act against their own values?
+- What creates discipline?
+- How do biases shape our thinking?
+- What actually leads to a meaningful life?
+
+I spent several years reading psychology, philosophy, and scientific literature while trying to apply those ideas to my own life.
+
+Those years were often confusing and difficult, but they forced me to develop a level of self awareness and reflection that continues to shape how I approach challenges today.
+
+Eventually I realized something important. Understanding yourself is not a final destination. It is an ongoing process.
+
+## Rebuilding
+
+At one point I moved to a small mountain town to create distance from my usual environment. I rented a small apartment, found a job, and focused on rebuilding structure and direction in my life.
+
+During that time I began recognizing patterns in how I learn best.
+
+I thrive when tackling complex systems through experimentation and iteration rather than rigid instruction. Competitive environments had always pushed me to improve rapidly, and that same mindset translated well to analytical challenges.
+
+A good example was chess. I started playing seriously during this period and within a year reached the 99.6th percentile of online players. Experiences like that reinforced something I had begun to suspect for years. I have a strong affinity for systems thinking, strategy, and pattern recognition.
+
+That realization eventually brought me back to something I had always been curious about: computer science.
+
+## Discovering Software Engineering
+
+Around this time I met my mentor, Batuhan, a senior full stack engineer who helped guide my learning.
+
+With his help I began studying front end development and quickly fell into the rhythm of building things and solving problems. We worked together on several projects using React, where I gained hands on experience with routing, APIs, and object oriented programming concepts.
+
+Soon after, I began studying data structures and algorithms, which I immediately found fascinating.
+
+From there my curiosity expanded beyond application development into the deeper layers of computing. I started studying memory, CPU architecture, and the relationship between hardware and software.
+
+The more I learned, the more the field felt like a natural fit.
+
+## Where I Am Now
+
+Today I am focused on becoming a stronger software engineer by continuing to build projects, deepen my understanding of computer systems, and refine my problem solving skills.
+
+Looking back, my path may have been unconventional, but it gave me something valuable: resilience, self awareness, and a genuine love for learning.
+
+In many ways, I am just getting started.
 `}
                 </ReactMarkdown>
             </div>

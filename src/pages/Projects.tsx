@@ -63,7 +63,7 @@ export const Projects = () => {
                         </div>
                         <div className={styles.links}>
                             {currentProject.appUrl ? <p><a href={currentProject.appUrl}>Website</a></p> : undefined}
-                            <p><a href={currentProject.github}>Repository</a></p>
+                            {currentProject.github ? <p><a href={currentProject.github}>Repository</a></p> : undefined}
                         </div>
                     </div>
                     {displayedImage ?
