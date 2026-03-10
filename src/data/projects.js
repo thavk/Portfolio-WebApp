@@ -18,7 +18,7 @@ Everything is styled with SCSS Modules and built from scratch — no UI librarie
 
 This app is both a personal milestone and a live demonstration of how far I’ve come after just a few months of self-teaching. It's deployment-ready and will evolve as I do.
 `,
-    appUrl: 'http://localhost:5173',
+    appUrl: 'https://thavk.github.io/Portfolio-WebApp/',
     github: 'https://github.com/thavk/Portfolio-WebApp',
     slug: 'portfolio-web-app',
 };
